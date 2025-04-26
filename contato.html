@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <table class="header-table">
+            <tr>
+                <td class="photo-cell">
+                    <img src="images/avatar.png" alt="Foto de Bea Silva" class="profile-photo">
+                </td>
+                <td class="name-cell">
+                    <h1>Bea Silva</h1>
+                    <p>Auxiliar Administrativo</p>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulário de Contato</h2>
+            <form action="#" method="post">
+
+                <!-- Dados pessoais -->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="nome">Nome*: </label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">E-mail*: </label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="idade">Idade*: </label>
+                    <input type="number" id="idade" name="idade" required><br><br>
+
+                    <label for="telefone">Telefone*: </label>
+                    <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                    <label for="nascimento">Data de Nascimento: </label>
+                    <input type="date" id="nascimento" name="nascimento"><br><br>
+
+                    <label for="sexo">Sexo: </label>
+                    <select id="sexo" name="sexo">
+                        <option value="">Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select><br><br>
+
+                    <label for="estadoCivil">Estado Civil: </label>
+                    <input type="text" id="estadoCivil" name="estadoCivil"><br><br>
+
+                </fieldset>
+
+                <!-- Dados da empresa -->
+                <fieldset>
+                    <legend>Dados da Empresa</legend>
+
+                    <label for="cnpj">CNPJ: </label>
+                    <input type="text" id="cnpj" name="cnpj"><br><br>
+
+                    <label for="razao">Razão Social: </label>
+                    <input type="text" id="razao" name="razao"><br><br>
+
+                    <label for="ramo">Ramo de Atuação: </label>
+                    <input type="text" id="ramo" name="ramo"><br><br>
+
+                </fieldset>
+
+                <!-- Endereço -->
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <label for="cep">CEP*: </label>
+                    <input type="text" id="cep" name="cep" required><br><br>
+
+                    <label for="tipoLogradouro">Tipo de Logradouro*: </label>
+                    <select id="tipoLogradouro" name="tipoLogradouro" required>
+                        <option value="">Selecione</option>
+                        <option value="rua">Rua</option>
+                        <option value="avenida">Avenida</option>
+                        <option value="praça">Praça</option>
+                        <option value="outro">Outro</option>
+                    </select><br><br>
+
+                    <label for="logradouro">Logradouro*: </label>
+                    <input type="text" id="logradouro" name="logradouro" required><br><br>
+
+                    <label for="cidade">Cidade*: </label>
+                    <input type="text" id="cidade" name="cidade" required><br><br>
+
+                    <label for="estado">Estado*: </label>
+                    <input type="text" id="estado" name="estado" required><br><br>
+
+                </fieldset>
+
+                <!-- Descrição -->
+                <fieldset>
+                    <legend>Descrição do Interesse</legend>
+
+                    <label for="descricao">Descrição: </label><br>
+                    <textarea id="descricao" name="descricao" rows="5" cols="40"></textarea><br><br>
+
+                </fieldset>
+
+                <!-- Outros -->
+                <fieldset>
+                    <legend>Outros</legend>
+
+                    <p>Marque suas preferências:</p>
+                    <input type="checkbox" id="newsletter" name="preferencias" value="newsletter">
+                    <label for="newsletter">Receber newsletter</label><br>
+
+                    <input type="checkbox" id="vagas" name="preferencias" value="vagas">
+                    <label for="vagas">Receber vagas</label><br>
+
+                    <input type="checkbox" id="eventos" name="preferencias" value="eventos">
+                    <label for="eventos">Ser informado sobre eventos</label><br>
+
+                    <input type="checkbox" id="outros" name="preferencias" value="outros">
+                    <label for="outros">Outros</label><br><br>
+
+                    <p>Tipo de contato:</p>
+                    <input type="radio" id="emailRadio" name="tipoContato" value="email">
+                    <label for="emailRadio">E-mail</label><br>
+
+                    <input type="radio" id="telefoneRadio" name="tipoContato" value="telefone">
+                    <label for="telefoneRadio">Telefone</label><br>
+
+                    <input type="radio" id="whatsappRadio" name="tipoContato" value="whatsapp">
+                    <label for="whatsappRadio">WhatsApp</label><br><br>
+
+                </fieldset>
+
+                <button id="button_enviar" type="submit">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
